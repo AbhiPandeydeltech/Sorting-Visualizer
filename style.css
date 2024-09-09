@@ -1,0 +1,242 @@
+
+
+
+/*
+    *****************
+    DONE BY:-   ABHISHEK PANDEY
+    
+    *****************
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none; /* by doing this, on multiple clicking the element wont get selected to copy it,applying it to all*/
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #e0f7df;
+}
+
+#navbar{
+  width: 100vw;
+  background-color: #34495e;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+  @media only screen and (max-width:855px){
+    gap:0.5vmin;
+  }
+  @media only screen and (min-width:855px) and (max-width:901px){
+    gap:1.2vmin;
+  }
+  @media only screen and (min-width:901px) and (max-width:961px){
+    gap:0.8vmin;
+  }
+  @media only screen and (min-width:961px) and (max-width:1000px){
+    gap:1vmin;
+  }
+  @media only screen and (min-width:1001px) and (max-width:1300px){
+    gap: 1.2vmin;
+  }
+  @media only screen and (min-width:1301px) and (max-width:1451px){
+    gap: 4vmin;
+  }
+  @media only screen and (min-width:1451px) and (max-width:1601px){
+    gap: 5vmin;
+  }
+  @media only screen and (min-width:1601px) and (max-width:1701px){
+    gap: 10vmin;
+  }
+  @media only screen and (min-width:1701px) and (max-width:1869px){
+    gap: 2vmin;
+  }
+  
+}
+
+.si {
+  display: flex;
+}
+
+.sp {
+  display: flex;
+}
+
+#array_generate {
+  color: white;
+  padding: 1.2vmin 2vmin;
+  font-size: 2.1vmin;
+  font-weight: bold;
+}
+
+#array_size {
+  color: white;
+  padding: 1.2vmin 2vmin;
+  font-size: 2.1vmin;
+  font-weight: bold;
+}
+
+#array_speed{
+  color: white;
+  padding: 1.2vmin 2vmin;
+  font-size: 2.1vmin;
+  font-weight: bold;
+}
+
+.sort_button{
+  color: white;
+  padding: 1.2vmin 2vmin;
+  font-size: 2.1vmin;
+  font-weight: bold;
+}
+
+.pausebtn{
+  color: white;
+  padding: 1.2vmin 2vmin;
+  font-size: 2.1vmin;
+  font-weight: bold;
+}
+
+.asi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 16vmin;
+  height: 1.1vmin;
+  background: white;
+  outline: none;
+  border-radius: 1vmin;
+}
+
+/* Styling the thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2vmin;
+  height: 2vmin;
+  background: magenta; /* Thumb color */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  border:1vmin solid transparent;
+}
+
+/* Button that triggers the dropdown */
+.dropdown-button {
+  background-color: #4caf50; /* Green background */
+  color: white;
+  padding: 1.2vmin 2vmin;
+  font-size: 2.2vmin;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5vmin;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #343a40;
+  min-width: 22.1vmin;
+  margin-top: 1.5vmin;
+  box-shadow: 0vmin 1vmin 2vmin 0vmin rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  padding: 0;
+}
+
+/* Items inside the dropdown */
+.sortingAlgo{
+  color: white;
+  padding: 1.2vmin 3.5vmin;
+  text-decoration: none;
+  display: block;
+  background-color:  #34495e;
+  border-bottom: 1px solid #153657;
+  cursor: pointer;
+  font-size: 2.2vmin;
+  font-family: "Lato";
+}
+
+/* Change background on hover */
+.sortingAlgo:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+#array_generate:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.hovered:hover{
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.Hovered:hover{
+  background-color: #4caf50;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5vmin;
+}
+
+#array_container {
+  display: flex;
+  width: 70%;
+  height: 75%;
+  margin-top : 4%;
+  margin-left: 15%;
+  /* background-color: red; */
+  align-items: flex-end;
+}
+
+.butt_selected{
+  color: orange;
+  cursor: pointer;
+}
+
+.butt_locked{
+ cursor: default;
+ pointer-events: none;
+}
+
+.butt_locked:hover{
+ opacity: 100%;
+ cursor: default;
+}
+
+.inp_genDisable{
+ pointer-events: none;
+}
+
+
+
+
+/*
+    *****************
+    DONE BY:-   ABHISHEK PANDEY
+    
+    *****************
+*/

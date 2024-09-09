@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="navbar">
+        <div id="array_generate">Generate New Array !</div>
+        <div class="si">
+        <div id="array_size">Change Array Size</div>
+        <div class="asi">
+        <input id="a_size" type="range" min=20 max=180 step=1 value=80>
+        </div>
+        </div>
+        <div class="sp">
+        <div id="array_speed">Change Sorting Speed</div>
+        <div class="asi">
+        <input id="a_speed" type="range" min="1" max="5" step="1" value="4">
+        </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-button">Algorithms &#x25BC;</button>
+          <div id="algos" class="dropdown-content">
+            <div class="sortingAlgo">Bubble Sort</div>
+            <div class="sortingAlgo">Insertion Sort</div>
+            <div class="sortingAlgo">Selection Sort</div>
+            <div class="sortingAlgo">Merge Sort</div>
+            <div class="sortingAlgo">Quick Sort</div>
+            <div class="sortingAlgo">Heap Sort</div>
+          </div>
+        </div> 
+        <div class="sort_button">Sort !</div>
+        <div class="pausebtn inp_genDisable">Reset !</div>
+      </div>
+      
+      <div id="array_container">
+
+      </div>
+    </div>
+
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualisations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubblesort.js"></script>
+    <script src="./scripts/selectionsort.js"></script>
+    <script src="./scripts/insertionsort.js"></script>
+    <script src="./scripts/mergesort.js"></script>
+    <script src="./scripts/quicksort.js"></script>
+    <script src="./scripts/heapsort.js"></script>
+  </body>
+</html>
